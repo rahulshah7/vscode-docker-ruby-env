@@ -1,0 +1,23 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+  "name": "Ruby 2",
+  "dockerFile": "Dockerfile",
+  // Uncomment the next line if you want to publish any ports.
+  // "appPort": [],
+  // Default container specific settings.json values
+  "settings": {
+    "ruby.lint": {
+      "rubocop": true
+    },
+    "ruby.lintDebounceTime": 500,
+    "ruby.format": "rubocop",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 1500,
+    "editor.tabSize": 2
+  },
+  // Uncomment the next line to run commands after the container is created.
+  "postCreateCommand": "gem install bundler && bundle install",
+  "extensions": [
+    "rebornix.Ruby"
+  ]
+}
