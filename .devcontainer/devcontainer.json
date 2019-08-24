@@ -17,7 +17,7 @@
     "solargraph.useBundler": true
   },
   // Uncomment the next line to run commands after the container is created.
-  "postCreateCommand": "gem install bundler && bundle install",
+  "postCreateCommand": "bundle install",
   "extensions": [
     "rebornix.Ruby",
     "castwide.solargraph",

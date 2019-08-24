@@ -5,9 +5,10 @@
 
 FROM ruby:2
 
-# Install ruby-debug-ide and debase
+# Install ruby-debug-ide, debase and bundler
 RUN gem install ruby-debug-ide
 RUN gem install debase
+RUN gem install bundler
 
 # Install git, process tools
 RUN apt-get update && apt-get -y install git procps
