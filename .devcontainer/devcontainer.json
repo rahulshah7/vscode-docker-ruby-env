@@ -13,11 +13,13 @@
     "ruby.format": "rubocop",
     "editor.formatOnSave": true,
     "editor.formatOnSaveTimeout": 1500,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "solargraph.useBundler": true
   },
   // Uncomment the next line to run commands after the container is created.
   "postCreateCommand": "gem install bundler && bundle install",
   "extensions": [
-    "rebornix.Ruby"
+    "rebornix.Ruby",
+    "castwide.solargraph"
   ]
 }
