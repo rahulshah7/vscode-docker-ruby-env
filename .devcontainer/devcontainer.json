@@ -20,6 +20,7 @@
   "postCreateCommand": "gem install bundler && bundle install",
   "extensions": [
     "rebornix.Ruby",
-    "castwide.solargraph"
+    "castwide.solargraph",
+    "formulahendry.code-runner"
   ]
 }
